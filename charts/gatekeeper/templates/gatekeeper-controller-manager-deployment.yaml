@@ -53,6 +53,7 @@ spec:
         - --port=8443
         - --logtostderr
         - --emit-admission-events={{ .Values.emitAdmissionEvents }}
+        - --log-denies={{ .Values.logDenies }}
         - --log-level={{ .Values.logLevel }}
         - --exempt-namespace=gatekeeper-system
         - --operation=webhook
